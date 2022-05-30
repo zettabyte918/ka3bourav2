@@ -25,9 +25,7 @@
 </head>
 
 <body>
-<?php
-if(true) {
-	echo '    <!-- Modal login -->
+<!-- Modal login -->
     <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" style="max-width: 400px;" role="document">
             <div class="modal-content">
@@ -117,11 +115,9 @@ if(true) {
             </div>
         </div>
     </div>
-    <!-- Modal register -->	';
+    <!-- Modal register -->	
     
-}
 
-?>
     <div class="modal fade" id="inPageModal" role="dialog">
         <div class="modal-dialog modal-dialog-scrollable modal-lg">
             <div class="modal-content">
@@ -186,15 +182,13 @@ if(true) {
                 </div>
 
                 <div class="form-group">
-                    <?php
-if(session_id() == '' || !isset($_SESSION)) {
-    echo '<div class="mb-10">
+                   
+    <div class="mb-10">
                         <button type="button" class="btn btn-success" style="width: 60%;" data-toggle="modal" data-target="#login_modal">Login</button>
 						<button type="button" class="btn btn-secondary" style="width: 38%;float: right" data-toggle="modal" data-target="#register_modal">Register</button>
 
-                    </div>';
-}
-?>
+                    </div>
+
 
                     <button type="button" id="play-btn" onclick="play(document.getElementById('nick').value); return false;" class="btn btn-play btn-primary btn-needs-server">Play</button>
                     <button onclick="$('#settings, #instructions').toggle(); return false;" class="btn btn-info" id="settings-btn"><i class="fa fa-cog"></i></button>
@@ -245,13 +239,11 @@ if(session_id() == '' || !isset($_SESSION)) {
                 <a href="https://github.com/Luka967/Cigar" class="text-muted">Luka967/Cigar</a>
             </div>
             <div id="levelbar" class="side-container">
-			<?php
-if(session_id() == '' || !isset($_SESSION)) {
-	echo '<div id="level-blocker" class="shop-blocker"><span class="outlined-text" style="display: block;top:50%" data-itr="connecting">Connecting</span></div>';
+	<div id="level-blocker" class="shop-blocker"><span class="outlined-text" style="display: block;top:50%" data-itr="connecting">Connecting</span></div>
     
-}
 
-?>
+
+
                 
                 <div class="agario-side-panel agario-profile-panel side-container">
                     <div class="clearfix" style="margin-bottom: 16px;">
@@ -278,13 +270,9 @@ if(session_id() == '' || !isset($_SESSION)) {
                 </div>
             </div>
             <div id="shop-panel" class="side-container">
-			<?php
-if(session_id() == '' || !isset($_SESSION)) {
-	echo '<div id="shop-blocker" class="shop-blocker"><span class="outlined-text" style="display: block;top:50%" data-itr="connecting">Connecting</span></div>';
+			<div id="shop-blocker" class="shop-blocker"><span class="outlined-text" style="display: block;top:50%" data-itr="connecting">Connecting</span></div>
     
-}
 
-?>
                 <div class="form-group" id="agario-second-buttons">
                     <button id="openShopBtn" onclick="MC.openShop(); return false;" class="btn btn-shop" style="line-height: 24px;" data-itr="Shop">Shop</button>
                     <br clear="both">
